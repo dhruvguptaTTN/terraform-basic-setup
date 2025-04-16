@@ -1,6 +1,6 @@
 
 provider "aws" {
-  region  = local.workspace["aws"]["region"]
+  region = local.workspace["aws"]["region"]
 }
 
 terraform {
@@ -21,6 +21,6 @@ locals {
   project_name_prefix = "{local.workspace.account_name}-${local.workspace.aws.region}-${local.workspace.project_name}"
 
   tags = {
-    Project     = local.workspace.project_name
+    Project = local.workspace.project_name
   }
 }

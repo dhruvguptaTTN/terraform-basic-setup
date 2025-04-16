@@ -1,7 +1,7 @@
 variable "vpc_name" {
   description = "The VPC Subnet IDs to launch in"
   type        = string
-  default     = "demorun"	
+  default     = "demorun"
 }
 variable "backend_bucket_name" {
   description = "S3 bucket name"

@@ -1,7 +1,7 @@
 data "aws_vpc" "selected" {
   depends_on = [
-   module.network
- ]
+    module.network
+  ]
   filter {
     name   = "tag:Name"
     values = ["${local.workspace.account_name}-${local.workspace.aws.region}-${local.workspace.project_name}"]
