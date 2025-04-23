@@ -2,9 +2,9 @@ common:
   vpn_cidr: "10.1.0.0/16"
 
 workspaces:
-  nonprod-us-west-1-default:
+  nonprod-us-east-2-default:
     aws:
       account_id: 897722682612
-      region: us-west-1
+      region: us-east-2
     account_name: dhruv
     project_name: tf-basic
